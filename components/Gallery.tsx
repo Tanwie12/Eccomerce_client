@@ -8,7 +8,7 @@ const Gallery = ({ productMedia }: { productMedia: string[] }) => {
 
   return (
     <div className="flex flex-col gap-3 max-w-[500px">
-      <Image
+      <img
         src={mainImage}
         width={500}
         height={500}
@@ -17,7 +17,7 @@ const Gallery = ({ productMedia }: { productMedia: string[] }) => {
       />
       <div className="flex gap-2 overflow-auto tailwind-scrollbar-hide">
         {productMedia.map((image, index) => (
-          <Image
+          <img
             key={index}
             src={image}
             height={200}
