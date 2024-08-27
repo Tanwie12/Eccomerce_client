@@ -16,7 +16,7 @@ const ProductCard = ({ product, updateSignedInUser }: ProductCardProps) => {
       className={`relative bg-card text-card-foreground p-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none w-[220px] flex flex-col gap-2`}
     >
       <div className="relative overflow-hidden rounded-lg">
-        <Image
+        <img
           src={product.media[0]}
           alt="product"
           width={250}
